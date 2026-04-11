@@ -1,0 +1,17 @@
+def is_armstrong(num):
+   
+    num_str = str(num)
+    n = len(num_str)
+    
+   
+    total_sum = sum(int(digit) ** n for digit in num_str)
+    
+    
+    return total_sum == num
+
+# Test the program
+number = int(input("Enter a number: "))
+if is_armstrong(number):
+    print(f"{number} is an Armstrong number.")
+else:
+    print(f"{number} is not an Armstrong number.")
